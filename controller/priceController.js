@@ -7,6 +7,7 @@ const {API} = process.env;
 app.get('/api/', (req, res)=>{
     axios.get(API)
     .then((response) => {
+  
 
         res.send(response.data)
 
@@ -14,11 +15,6 @@ app.get('/api/', (req, res)=>{
 
 
 
-    //   console.log(response.data);
-    //   console.log(response.status);
-    //   console.log(response.statusText);
-    //   console.log(response.headers);
-    //   console.log(response.config);
     });
 
 
