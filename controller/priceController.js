@@ -4,7 +4,12 @@ const priceController = (app)=>{
     const axios = require('axios');
 const {API} = process.env;
 
-app.get('/api/', (req, res)=>{
+
+
+/*
+* creating a get request
+*/
+app.get('/api/price', (req, res)=>{
     axios.get(API)
     .then((response) => {
   
